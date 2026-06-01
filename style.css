@@ -42,7 +42,10 @@ body {
   line-height: 1.6;
 }
 
-button, input, select, textarea {
+button,
+input,
+select,
+textarea {
   font-family: inherit;
   font-size: inherit;
 }
@@ -92,7 +95,7 @@ button, input, select, textarea {
 }
 
 .directions {
-  color: var(--grey-500); 
+  color: var(--grey-500);
 }
 
 .rating-btns {
@@ -103,8 +106,8 @@ button, input, select, textarea {
 
 .number-btn {
   border-radius: var(--circle);
-  width: clamp(2.625rem, 1rem + 6.9vw, 3.25rem);
-  height: clamp(2.625rem, 1rem + 6.9vw, 3.25rem);
+  width: clamp(2.5rem, 1rem + 6.4vw, 3rem);
+  height: clamp(2.5rem, 1rem + 6.4vw, 3rem);
   aspect-ratio: 1 / 1;
   color: var(--grey-500);
   font-weight: var(--fw-bold);
@@ -114,7 +117,6 @@ button, input, select, textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-block-end: .5rem;
 }
 
 .number-btn:hover {
@@ -137,8 +139,8 @@ button, input, select, textarea {
   border-radius: var(--button);
   border: none;
   width: 100%;
-  padding-block-start: .85rem;
-  padding-block-end: .85rem;
+  padding-block-start: 0.85rem;
+  padding-block-end: 0.85rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
