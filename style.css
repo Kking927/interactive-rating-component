@@ -72,8 +72,6 @@ button, input, select, textarea {
 }
 
 .star-container {
-  display: block;
-  float: left;
   background-color: var(--bg-circle);
   border-radius: var(--circle);
   display: flex;
@@ -132,7 +130,7 @@ button, input, select, textarea {
 .submit-btn {
   text-transform: uppercase;
   color: var(--grey-900);
-  letter-spacing: 2px;
+  letter-spacing: 0.125em;
   font-size: var(--submit);
   font-weight: var(--fw-bold);
   background-color: var(--orange-500);
@@ -173,4 +171,15 @@ button, input, select, textarea {
 /* Media Queries */
 @media (min-width: 90rem) {
   /* 1440px */
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms;
+    animation-iteration-count: 1;
+    transition-duration: 0.01ms;
+    scroll-behavior: auto;
+  }
 }
