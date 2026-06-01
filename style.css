@@ -69,7 +69,7 @@ textarea {
   width: 90%;
   max-width: 27rem;
   padding: clamp(1.25rem, 5vw, 2rem);
-  gap: clamp(1.25rem, 4vw, 2rem);
+  gap: clamp(1.5rem, 4vw, 2.25rem);
   cursor: default;
 }
 
@@ -104,8 +104,8 @@ textarea {
 
 .number-btn {
   border-radius: var(--circle);
-  width: clamp(2.5rem, 1rem + 6.4vw, 3rem);
-  height: clamp(2.5rem, 1rem + 6.4vw, 3rem);
+  width: clamp(2.75rem, 1rem + 6.4vw, 3.25rem);
+  height: clamp(2.75rem, 1rem + 6.4vw, 3.25rem);
   aspect-ratio: 1 / 1;
   color: var(--grey-500);
   font-weight: var(--fw-bold);
