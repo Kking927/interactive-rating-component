@@ -1,4 +1,4 @@
-:root {
+\:root {
   /* Colors */
 
   /* Primary */
@@ -39,6 +39,11 @@
 
 body {
   font-family: var(--font-primary);
+  line-height: 1.6;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
 }
 
 .container {
@@ -58,10 +63,11 @@ body {
   border-radius: var(--card);
   background-color: var(--grey-900);
   width: 90%;
-  max-width: 25rem;
+  max-width: 27rem;
   max-height: auto;
-  padding: 1.875rem;
-  gap: 1.75rem;
+  padding: 2rem;
+  gap: 2rem;
+  cursor: default;
 }
 
 .star-container {
@@ -76,18 +82,17 @@ body {
 }
 
 .text-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: .75rem;
+  display: block;
+  width: 100%;
 }
 
 .title {
   color: var(--white);
+  margin-bottom: 0.75rem;
 }
 
 .directions {
-  color: var(--grey-500);
+  color: var(--grey-500); 
 }
 
 .rating-btns {
@@ -142,7 +147,7 @@ body {
 }
 
 .display-none {
-  display: none !important;
+  display: none;
 }
 
 .container.clickable-bg {
@@ -154,34 +159,12 @@ body {
   align-items: center;
 }
 
-.thank-you-img {
-  margin-bottom: 0.5rem;
-}
-
 .selection-badge {
   background-color: var(--bg-circle);
   color: var(--orange-500);
   padding: 0.5rem 1rem;
   border-radius: var(--button);
   font-size: var(--body);
-  margin-bottom: 0.5rem;
-}
-
-.center-align {
-  align-items: center;
-  text-align: center;
-}
-
-.rating-state {
-  align-items: flex-start;
-}
-
-.rating-state .text {
-  text-align: left;
-}
-
-.card {
-  cursor: default;
 }
 
 /* Media Queries */
