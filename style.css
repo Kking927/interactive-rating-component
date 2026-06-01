@@ -64,7 +64,6 @@ button, input, select, textarea {
   background-color: var(--grey-900);
   width: 90%;
   max-width: 27rem;
-  max-height: auto;
   padding: 2rem;
   gap: 2rem;
   cursor: default;
@@ -130,7 +129,7 @@ button, input, select, textarea {
   text-transform: uppercase;
   color: var(--grey-950);
   letter-spacing: 2px;
-  font-size: 1rem;
+  font-size: var(--submit);
   font-weight: var(--fw-bold);
   background-color: var(--orange-500);
   border-radius: var(--button);
