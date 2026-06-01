@@ -17,7 +17,7 @@
   --font-primary: "Overpass", sans-serif;
 
   /*   Sizes */
-  --title: 18px; /* 18px; */
+  --title: 1rem; /* 16px; */
   --body: 0.9375rem; /*15px*/
   --submit: 1rem; /* 16px */
 
@@ -65,7 +65,7 @@ button, input, select, textarea {
   width: 90%;
   max-width: 27rem;
   padding: 2rem;
-  gap: 2rem;
+  gap: 1.75rem;
   cursor: default;
 }
 
@@ -87,7 +87,7 @@ button, input, select, textarea {
 
 .title {
   color: var(--white);
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
 }
 
 .directions {
@@ -102,8 +102,8 @@ button, input, select, textarea {
 
 .number-btn {
   border-radius: var(--circle);
-  width: 3rem;
-  height: 3rem;
+  width: 3.5rem;
+  height: 3.5rem;
   aspect-ratio: 1 / 1;
   color: var(--grey-500);
   font-weight: var(--fw-bold);
