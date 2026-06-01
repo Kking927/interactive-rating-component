@@ -9,7 +9,7 @@
   --grey-500: hsl(217, 12%, 63%);
   --grey-900: hsl(213, 19%, 18%);
   --grey-950: hsl(216, 12%, 8%);
-  --bg-circle: var(--grey-900);
+  --bg-circle: hsla(0, 0%, 100%, 0.05);
 
   /* Typography */
 
@@ -17,8 +17,8 @@
   --font-primary: "Overpass", sans-serif;
 
   /*   Sizes */
-  --title: clamp(1.5rem, 1.37rem + 0.56vw, 1.875rem);
-  --body: clamp(0.875rem, 0.85rem + 0.1vw, 0.9375rem);
+  --title: clamp(1.5rem, 1.41rem + 0.38vw, 1.75rem); /* 28px */
+  --body: clamp(0.875rem, 0.85rem + 0.1vw, 0.9375rem); /* 15px */
   --submit: 1rem; /* 16px */
 
   /* Weights */
@@ -53,7 +53,7 @@ button, input, select, textarea {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: black;
+  background-color: var(--grey-950);
 }
 
 .card {
@@ -62,7 +62,7 @@ button, input, select, textarea {
   justify-content: center;
   align-items: center;
   border-radius: var(--card);
-  background-color: var(--grey-950);
+  background-color: var(--grey-900);
   width: 90%;
   max-width: 27rem;
   padding-block: clamp(1.5rem, 5vw, 2.25rem);
@@ -121,17 +121,17 @@ button, input, select, textarea {
 
 .number-btn:hover {
   background-color: var(--orange-500);
-  color: var(--grey-950);
+  color: var(--grey-900);
 }
 
 .number-btn.selected {
   background-color: var(--white);
-  color: var(--grey-950);
+  color: var(--grey-900);
 }
 
 .submit-btn {
   text-transform: uppercase;
-  color: var(--grey-950);
+  color: var(--grey-900);
   letter-spacing: 2px;
   font-size: var(--submit);
   font-weight: var(--fw-bold);
