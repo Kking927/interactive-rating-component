@@ -92,7 +92,6 @@ textarea {
 .title {
   font-size: var(--title);
   color: var(--white);
-  margin-block-end: clamp(0.375rem, 0.32rem + 0.2vw, 0.5rem);
 }
 
 .directions {
