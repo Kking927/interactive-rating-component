@@ -69,8 +69,7 @@ textarea {
   background-color: var(--grey-900);
   width: 90%;
   max-width: 27rem;
-  padding-block: clamp(1.5rem, 5vw, 2.25rem);
-  padding-inline: clamp(1.5rem, 5vw, 2.25rem);
+  padding: clamp(1.5rem, 5vw, 2.25rem);
   gap: clamp(1rem, 4vw, 1.75rem);
   cursor: default;
 }
@@ -81,8 +80,7 @@ textarea {
   display: flex;
   align-self: flex-start;
   justify-content: center;
-  padding-block: clamp(0.75rem, 0.5rem + 1.1vw, 1rem);
-  padding-inline: clamp(0.75rem, 0.5rem + 1.1vw, 1rem);
+  padding: clamp(0.75rem, 0.5rem + 1.1vw, 1rem);
   margin-block-end: var(--space);
 }
 
@@ -142,8 +140,7 @@ textarea {
   border-radius: var(--button);
   border: none;
   width: 100%;
-  padding-block-start: 0.85rem;
-  padding-block-end: 0.85rem;
+  padding-block: clamp(0.75rem, 0.71rem + 0.2vw, 0.85rem);
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
