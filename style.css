@@ -17,8 +17,8 @@
   --font-primary: "Overpass", sans-serif;
 
   /*   Sizes */
-  --title: 1.5rem; /*24px*/
-  --body: 0.9375rem; /*15px*/
+  --title: clamp(1.5rem, 1.37rem + 0.56vw, 1.875rem);
+  --body: clamp(0.875rem, 0.85rem + 0.1vw, 0.9375rem);
   --submit: 1rem; /* 16px */
 
   /* Weights */
@@ -26,7 +26,7 @@
   --fw-bold: 700;
 
   /*  Border Radii  */
-  --card: 1rem;
+  --card: 2rem;
   --button: 100rem;
   --circle: 50%;
 }
@@ -44,6 +44,7 @@ body {
 
 button, input, select, textarea {
   font-family: inherit;
+  font-size: inherit;
 }
 
 .container {
@@ -64,8 +65,9 @@ button, input, select, textarea {
   background-color: var(--grey-900);
   width: 90%;
   max-width: 27rem;
-  padding: 2rem;
-  gap: 1.5rem;
+  padding-block: clamp(1.5rem, 5vw, 2.25rem);
+  padding-inline: clamp(1.5rem, 5vw, 2.25rem);
+  gap: clamp(1.25rem, 4vw, 2rem);
   cursor: default;
 }
 
@@ -78,6 +80,7 @@ button, input, select, textarea {
   align-self: flex-start;
   justify-content: center;
   padding: 1rem;
+  margin-block-end: 0.5rem;
 }
 
 .text-content {
@@ -88,7 +91,7 @@ button, input, select, textarea {
 .title {
   font-size: var(--title);
   color: var(--white);
-  margin-bottom: 0.5rem;
+  margin-block-end: 0.5rem;
 }
 
 .directions {
@@ -103,8 +106,8 @@ button, input, select, textarea {
 
 .number-btn {
   border-radius: var(--circle);
-  width: 3.25rem;
-  height: 3.25rem;
+  width: clamp(2.625rem, 1rem + 6.9vw, 3.25rem);
+  height: clamp(2.625rem, 1rem + 6.9vw, 3.25rem);
   aspect-ratio: 1 / 1;
   color: var(--grey-500);
   font-weight: var(--fw-bold);
@@ -137,8 +140,8 @@ button, input, select, textarea {
   border-radius: var(--button);
   border: none;
   width: 100%;
-  padding-top: .85rem;
-  padding-bottom: .85rem;
+  padding-block-start: .85rem;
+  padding-block-end: .85rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
