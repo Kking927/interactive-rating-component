@@ -1,4 +1,4 @@
-// Select the container and cards
+// 1. DOM Selections (Moved to the top)
 const container = document.querySelector('.container');
 const ratingState = document.querySelector('.rating-state');
 const thankYouState = document.querySelector('.thank-you-state');
@@ -8,14 +8,15 @@ const ratingValue = document.getElementById('rating-value');
 
 let selectedRating = null;
 
-// Rating Button Logic (unchanged)
-ratingBtns.forEach((btn) => {
-  btn.addEventListener('click', (e) => {
-    // Prevent the click from "bubbling up" to the container
+// 2. Rating Button Logic
+ratingBtns.forEach((button) => { // FIXED: Changed parameter 'btn' to 'button'
+  button.addEventListener('click', (e) => {
     e.stopPropagation(); 
 
     const isAlreadySelected = e.target.classList.contains('selected');
-    ratingBtns.forEach((btn) => btn.classList.remove('selected'));
+    
+    // Clear selections from all buttons
+    ratingBtns.forEach((clearBtn) => clearBtn.classList.remove('selected')); // FIXED: Changed 'btn' to 'clearBtn'
 
     if (isAlreadySelected) {
       selectedRating = null;
@@ -26,7 +27,7 @@ ratingBtns.forEach((btn) => {
   });
 });
 
-// Handle Submit Button
+// 3. Handle Submit Button
 submitBtn.addEventListener('click', (e) => {
   e.stopPropagation();
   if (selectedRating) {
@@ -34,24 +35,22 @@ submitBtn.addEventListener('click', (e) => {
     
     ratingState.classList.add('display-none');
     thankYouState.classList.remove('display-none');
-
-    // ADD THIS: Make the background appear clickable
     container.classList.add('clickable-bg');
   } else {
     alert('Please select a rating before submitting!');
   }
 });
 
-// RESET LOGIC
+// 4. Reset Logic
 container.addEventListener('click', (e) => {
   if (e.target === container) {
     selectedRating = null;
-    ratingBtns.forEach((btn) => btn.classList.remove('selected'));
+    
+    // Clear selections on reset
+    ratingBtns.forEach((resetBtn) => resetBtn.classList.remove('selected')); // FIXED: Changed 'btn' to 'resetBtn'
 
     ratingState.classList.remove('display-none');
     thankYouState.classList.add('display-none');
-
-    // REMOVE THIS: Reset the cursor back to default
     container.classList.remove('clickable-bg');
   }
 });
