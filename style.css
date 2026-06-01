@@ -20,7 +20,7 @@
   --title: clamp(1.5rem, 1.41rem + 0.38vw, 1.75rem); /* 28px */
   --body: clamp(0.875rem, 0.85rem + 0.1vw, 0.9375rem); /* 15px */
   --submit: 1rem; /* 16px */
-  --space: clamp(0.1875rem, 0.16rem + 0.1vw, 0.25rem);
+  --space: clamp(0.375rem, 0.16rem + 0.1vw, 0.5rem);
 
   /* Weights */
   --fw-regular: 400;
@@ -165,7 +165,8 @@ textarea {
 .selection-badge {
   background-color: var(--bg-circle);
   color: var(--orange-500);
-  padding: 0.5rem 1rem;
+  padding-block: clamp(0.375rem, 0.32rem + 0.2vw, 0.5rem);
+  padding-inline: clamp(0.75rem, 0.5rem + 1.1vw, 1rem);
   border-radius: var(--button);
   font-size: var(--body);
 }
