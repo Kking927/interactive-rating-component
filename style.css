@@ -107,8 +107,8 @@ textarea {
 
 .number-btn {
   border-radius: var(--circle);
-  width: clamp(2.538rem, 0.923rem + 5.908vw, 3rem);
-  height: clamp(2.538rem, 0.923rem + 5.908vw, 3rem);
+  width: clamp(2.75rem, 1rem + 6.4vw, 3.25rem);
+  height: clamp(2.75rem, 1rem + 6.4vw, 3.25rem);
   aspect-ratio: 1 / 1;
   color: var(--grey-500);
   font-size: var(--numbers);
