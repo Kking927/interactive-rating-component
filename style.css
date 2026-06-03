@@ -69,7 +69,7 @@ textarea {
   width: 100%;
   max-width: 26.5rem;
   padding: clamp(1.25rem, 5vw, 2rem);
-  gap: clamp(1.09375rem, 3.5vw, 1.75rem);
+  gap: clamp(1.094rem, 3.5vw, 1.75rem);
   cursor: default;
 }
 
