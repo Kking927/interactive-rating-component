@@ -38,14 +38,16 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
-- Custom CSS Properties
-- CSS Flexbox
-- Mobile-first responsive workflow
-- Fluid Design Architecture utilizing mathematical `clamp()` functions
-- CSS Logical Properties for semantic spatial styling
-- Vanilla JavaScript for programmatic state management
+- CSS custom properties
+- Flexbox
+- Mobile-first workflow
+- JavaScript (DOM manipulation and event handling)
 
 ### What I learned
+
+While building this project, I improved my understanding of how JavaScript can be used to manage user interactions and update the UI dynamically. I learned how to track a selected rating, validate that a choice was made before submission, and display the selected value in the thank-you state.
+
+I also learned how to create a "page change" effect without actually loading a new page by toggling CSS classes with JavaScript. This showed me how DOM manipulation can be used to control which content is visible and create a more interactive user experience.
 
     
 ## Author
