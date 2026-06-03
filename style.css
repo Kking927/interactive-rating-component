@@ -66,8 +66,8 @@ textarea {
   align-items: center;
   border-radius: var(--card);
   background-color: var(--grey-900);
-  width: 90%;
-  max-width: 27rem;
+  width: 100%;
+  max-width: 26.5rem;
   padding: clamp(1.25rem, 5vw, 2rem);
   gap: clamp(1.25rem, 4vw, 2rem);
   cursor: default;
@@ -79,7 +79,7 @@ textarea {
   display: flex;
   align-self: flex-start;
   justify-content: center;
-  padding: clamp(0.75rem, 0.5rem + 1.1vw, 1rem);
+  padding: clamp(1rem, 0.5rem + 1.1vw, 1.25rem);
 }
 
 .text-content {
