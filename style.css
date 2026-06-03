@@ -81,7 +81,7 @@ textarea {
   align-self: flex-start;
   justify-content: center;
   padding: clamp(0.8rem, 0.4rem + 0.88vw, 1rem);
-  margin-block-end: 0.25rem;
+  margin-block-end: 0.5rem;
 }
 
 .text-content {
