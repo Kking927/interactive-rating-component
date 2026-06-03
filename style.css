@@ -91,6 +91,7 @@ textarea {
 .title {
   font-size: var(--title);
   color: var(--white);
+  margin-block-end: 0.25rem;
 }
 
 .directions {
