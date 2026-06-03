@@ -9,14 +9,14 @@ const ratingValue = document.getElementById('rating-value');
 let selectedRating = null;
 
 // 2. Rating Button Logic
-ratingBtns.forEach((button) => { // FIXED: Changed parameter 'btn' to 'button'
+ratingBtns.forEach((button) => {
   button.addEventListener('click', (e) => {
     e.stopPropagation(); 
 
     const isAlreadySelected = e.target.classList.contains('selected');
     
     // Clear selections from all buttons
-    ratingBtns.forEach((clearBtn) => clearBtn.classList.remove('selected')); // FIXED: Changed 'btn' to 'clearBtn'
+    ratingBtns.forEach((clearBtn) => clearBtn.classList.remove('selected'));
 
     if (isAlreadySelected) {
       selectedRating = null;
