@@ -79,7 +79,7 @@ textarea {
   display: flex;
   align-self: flex-start;
   justify-content: center;
-  padding: clamp(1rem, 0.5rem + 1.1vw, 1.25rem);
+  padding: clamp(0.8rem, 0.4rem + 0.88vw, 1rem);
 }
 
 .text-content {
